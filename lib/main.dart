@@ -4,6 +4,7 @@ import 'firebase_options.dart';
 import 'package:chat_app/screen/auth.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
